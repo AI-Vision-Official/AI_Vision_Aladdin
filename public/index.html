@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aladdin Command Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Aladdin</h2>
+      <nav>
+        <ul>
+          <li>📨 Chat</li>
+          <li>🎨 Generation</li>
+          <li>🎬 Multimedia</li>
+          <li>📂 Productivity</li>
+          <li>⚙️ Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+<main class="content">
+  <h1>Welcome to Aladdin</h1>
+  <div class="tiles">
+    <div class="tile" id="tile-notepad">📝 Notepad</div>
+    <div class="tile" id="tile-chat">💬 Chat</div>
+    <div class="tile">📁 Files</div>
+    <div class="tile">🤖 AI Tools</div>
+  </div>
+
+  <!-- Module container -->
+  <div id="module-container" class="module-container"></div>
+</main>
+
+  </div>
+
+<div id="chat-container">
+  <div id="messages"></div>
+  <div id="input-container">
+    <input type="text" id="chat-input" placeholder="Typ hier..." />
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
